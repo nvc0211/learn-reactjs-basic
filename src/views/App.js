@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.scss';
+import MyExample from './myExample';
 
 function App() {
   return (
@@ -7,18 +8,13 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Hoang Cuong FullStack
+          Hoang Cuong FullStack 2023
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          View My Info
-        </a>
+        <MyExample />
       </header>
+
     </div>
+
   );
 }
 
