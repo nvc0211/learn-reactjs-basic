@@ -1,6 +1,8 @@
 import logo from './logo.svg';
 import './App.scss';
-import MyExample from './myExample';
+import TodoList from './Todo/TodoList';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
@@ -8,11 +10,23 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Hoang Cuong FullStack 2023
+          Simple Todo List By Hoang Cuong!
         </p>
-        <MyExample />
+        {/* <MyExample /> */}
+        <TodoList />
       </header>
-
+      <ToastContainer
+        position="top-right"
+        autoClose={1500}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
     </div>
 
   );
